@@ -38,7 +38,7 @@ const Footer: React.FC = () => {
   };
 
   return (
-    <footer className="bg-gray-900 dark:bg-black text-white py-12">
+    <footer className="bg-gray-900 dark:bg-black text-white py-8 md:py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           {/* Informations personnelles */}
@@ -123,16 +123,16 @@ const Footer: React.FC = () => {
 
         {/* Ligne de séparation */}
         <div className="border-t border-gray-800 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+          <div className="flex flex-col md:flex-row justify-between items-center space-y-2 md:space-y-0 gap-2 text-center md:text-left">
             <motion.p
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
-              className="text-gray-400 text-sm flex items-center"
+              className="text-gray-400 text-sm flex flex-wrap items-center justify-center md:justify-start text-center"
             >
-              © {currentYear} Portfolio Développeur Web Junior. Fait avec{' '}
+              © {currentYear} Portfolio Développeur Web Junior. Fait avec
               <Heart size={16} className="mx-1 text-red-500" fill="currentColor" />
-              et React
+              <span className="ml-1">et React</span>
             </motion.p>
             
             <motion.div
@@ -142,7 +142,7 @@ const Footer: React.FC = () => {
               className="flex items-center space-x-6 text-sm text-gray-400"
             >
               <span className="flex items-center">
-                <Award size={16} className="mr-1 text-blue-400" />
+                <Award size={24} className="mr-1 text-blue-400" />
                 Certifié DWWM
               </span>
               <span>•</span>
