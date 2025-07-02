@@ -16,15 +16,27 @@ const Portfolio: React.FC = () => {
       category: 'frontend',
       github: 'https://github.com/Blamxis/freshagency',
       demo: 'https://www.fresh-agency.fr/'
-    }
-    // Tu pourras ajouter d'autres projets ici plus tard
+    },
+    {
+      id: 2,
+      title: 'Outil de Scan de Vulnérabilités Web',
+      description:
+        "Scanner développé en Python pour détecter des failles XSS, SQLi, ou injections via navigateur ou formulaires. Utile pour l'audit de sécurité d'applications web.",
+      image: '/cyber.jpg',
+      technologies: ['Python', 'Selenium', 'Requests', 'Cybersécurité', 'CLI'],
+      category: 'cybersecurity',
+      github: 'https://github.com/Blamxis/vulnxpy',
+      demo: '' 
+}
+    
   ];
 
   const filters = [
     { id: 'all', label: 'Tous' },
     { id: 'frontend', label: 'Frontend' },
     { id: 'backend', label: 'Backend' },
-    { id: 'fullstack', label: 'Full Stack' }
+    { id: 'fullstack', label: 'Full Stack' },
+    { id: 'cybersecurity', label: 'Cybersécurité' },
   ];
 
   const filteredProjects =
