@@ -31,7 +31,7 @@ const Header: React.FC<HeaderProps> = ({ activeSection }) => {
   const downloadCV = () => {
     // Simuler le téléchargement du CV
     const link = document.createElement('a');
-    link.href = '/CV-Maxime-Gavinet-2024.pdf';
+    link.href = '/CV-Maxime-Gavinet-2025.pdf';
     link.download = 'CV-Développeur-FullStack.pdf';
     link.click();
   };
